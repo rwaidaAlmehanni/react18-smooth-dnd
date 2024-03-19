@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { smoothDnD as container, ContainerOptions, SmoothDnD } from 'smooth-dnd';
 import { dropHandlers } from 'smooth-dnd';
 
-container.dropHandler = dropHandlers.reactDropHandler().handler;
+container.dropHandler = dropHandlers?.reactDropHandler()?.handler;
 container.wrapChild = false;
 
 interface ContainerProps extends ContainerOptions {
